@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <title>ABC CARS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script defer src="app.js"></script>
+    </head>
+    <body>
+        <section id="header">
+        <div class="head">
+            <div class="logo">
+                <img src="images/logo2.png" style="width:100px;height: 40px;">
+            </div>
+            <div class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn">PRODUCTS
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="pro">
+                          <figure>
+                            <img src="images/01.png" style="width:200px;height: 100px;">
+                            <figcaption><center>Clanza</center></figcaption>
+                          </figure>
+                          <figure>
+                            <img src="images/02.png" style="width:200px;height: 100px;">
+                            <figcaption><center>Arbal Cruiser Dyryder</center></figcaption>
+                          </figure>
+                          <figure>
+                            <img src="images/03.png" style="width:200px;height: 100px;">
+                            <figcaption><center>Ennova Grysta</center></figcaption>
+                          </figure>
+                          <figure>
+                            <img src="images/04.png" style="width:200px;height: 100px;">
+                            <figcaption><center>Gortuner</center></figcaption>
+                          </figure>
+                          <figure>
+                            <img src="images/05s.png" style="width:200px;height: 100px;">
+                            <figcaption><center>Damry</center></figcaption>
+                          </figure>
+                        </div>
+                    </div>
+                </div> 
+                <div class="dropdown">
+                    <button class="dropbtn">ABC CARS IN INDIA
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">About Us</a>
+                      <a href="#">Hybrid Technology</a>
+                      <a href="#">Environment</a>
+                      <a href="#">ABC i-Connect</a>
+                      <a href="#">ABC Finance</a>
+                    </div>
+                </div> 
+                <div class="dropdown">
+                    <button class="dropbtn">SERVICES
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Service</a>
+                      <a href="#">Safety Recall</a>
+                    </div>
+                </div> 
+                <a href="#price">PRICE</a>
+                <a href="#menu">MORE</a>
+                <a href="#footer">CONTACT US</a> 
+            </div>
+            <button type="submit">BUY ONLINE</button>
+            <img src="images/phone.png" style="width: 20px;margin-left: 5px;height: 20px;margin-top: 10px;">
+
+        </div>
+        </section>
+        <section id="slideshow">
+          <div class="image-slideshow">
+            <div class="image fade">
+              <img src="images/delivery1.jpg">
+              <h1>ABC CARS<br><p>Ride Faster & Safer....With ABC CARS</p></h1>
+            </div>        
+            <div class="image fade">
+              <img src="images/delivery2.jpg">
+              <h1>ABC CARS<br><p>Ride Faster & Safer....With ABC CARS</p></h1>
+            </div>   
+            <div class="image fade">
+              <img src="images/delivery3.jpg">
+              <h1>ABC CARS<br><p>Ride Faster & Safer....With ABC CARS</p></h1>
+            </div>      
+        </div>
+
+        </section>
+        <script>
+          let index = 0;
+          displayImages();
+          function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+              images[i].style.display = "none";
+            }
+            index++;
+            if (index > images.length) {
+              index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 6000); 
+          }
+          
+      </script>
+      <section class="hidden">
+        <section id="menu">
+          <div class="m1" onclick="window.location.href='#'">
+            <center><img src="images/testdrive.png"></center><br>
+            <center><p>Test drive</p></center>
+          </div>
+          <div class="m1" onclick="window.location.href='#price'">
+            <center><img src="images/pricetag.png"></center><br>
+          <center><p>Price Range</p></center>
+          </div>
+            <div class="m1" onclick="window.location.href='#'">
+              <center><img src="images/brochure.png"></center><br>
+          <center><p>Brochure</p></center>
+          </div>
+          <div class="m1" onclick="window.location.href='#'">
+            <center><img src="images/dealer.png"></center><br>
+          <center><p>Find a Dealer</p></center>
+          </div>
+          <div class="m1" onclick="window.location.href='#'">
+            <center><img src="images/exchange.png"></center><br>
+          <center><p>Exchange Cars</p></center>
+          </div>
+        </section>
+      </section>
+      <section class="hidden">
+      <section id="price">
+        <center>
+        <h2>Discover the ABC CARS Range</h2>
+        <div class="p1">
+          <figure onclick="window.location.href='#'">
+            <img src="images/01.png" style="width:150px;height: 100px;">
+            <figcaption><center>Clanza <br><p>INR 11,50,000</p></center></figcaption>
+          </figure>
+          <figure onclick="window.location.href='#'">
+            <img src="images/02.png" style="width:150px;height: 100px;">
+            <figcaption><center>Arbal Cruiser Dyryder <br><p>INR 11,75,000</p></center></figcaption>
+          </figure>
+          <figure onclick="window.location.href='#'">
+            <img src="images/03.png" style="width:150px;height: 100px;">
+            <figcaption><center>Ennova Grysta <br><p>INR 11,85,000</p></center></figcaption>
+          </figure>
+          <figure onclick="window.location.href='#'">
+            <img src="images/04.png" style="width:150px;height: 100px;">
+            <figcaption><center>Gortuner <br><p>INR 12,50,000</p></center></figcaption>
+          </figure>
+          <figure onclick="window.location.href='#'">
+            <img src="images/05s.png" style="width:150px;height: 100px;">
+            <figcaption><center>Damry <br><p>INR 12,00,000</p></center></figcaption>
+          </figure>
+        </div>
+      </center>
+      </section>
+    </section>
+    <section class="hidden">
+      <section id="footer">
+        <div class="contact">
+          <h1>Find ABC Cars</h1><br><br>
+          <div class="det">
+              <div class="d">
+                  <img src="images/contact.png" style="width:30px">
+              </div>
+              <div class="d">
+                  <p style="margin-left: 15px;">Location : Tamilnadu</p><br>
+              </div>
+
+          </div>
+          <div class="det">
+              <div class="d">
+                  <img src="images/phone.png" style="width:30px">
+              </div>
+              <div class="d">
+                  <p style="margin-left: 15px;">Phone : +91 1234567890</p><br>
+              </div>
+          </div>
+          <div class="det">
+              <div class="d">
+                  <img src="images/email.png" style="width:30px">
+              </div>
+              <div class="d">
+                  <p style="margin-left: 15px;">E-Mail : abccars123@gmail.com</p><br>
+              </div>
+          </div>
+          <div class="det">
+              <div class="d">
+                  <img src="images/insta.png" style="width:30px">
+              </div>
+              <div class="d">
+                  <p style="margin-left: 15px;">Instagram : car_abc</p><br>
+              </div>
+          </div>
+         
+         
+      </div>
+      <div class="lg">
+        <img src="images/logo.png" style="width:200px;height: 200px;">
+      </div>
+      </section>
+    </section>
+    </body>
+</html>
